@@ -1,7 +1,7 @@
-function euroToPounds(){
+function = euroToPounds() {
 
   var amount = parseInt(document.getElementById("value1").value);
-
+	
   var pounds = amount * 0.86;
   var message = amount + ' euros converts to ' + pounds + ' sterling.';
   console.log(message);
@@ -19,7 +19,7 @@ function euroToUSdollar() {
   doc.getElementById("resultsentence").innerHTML = message;
 
 }
-
+// same functions just different names and currency rate
 function euroToJapaneseYen() {
 	var amount = parseInt(document.getElementById("value1").value);
 
@@ -38,4 +38,12 @@ function euroToBitcoin() {
   console.log(message);
   doc.getElementById("resultsentence").innerHTML = message;
 
+}
+
+// alert user with a message box to inform them what they have put in is incorrect
+if amount = 0 {
+	alert("Please insert a value greater than 0")
+}
+if amount = null {
+	alert("Please enter a value")
 }
